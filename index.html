@@ -80,17 +80,19 @@
 
   /* 🔥 Primary CTA style */
   .primary-button {
-    background-color: #e53935;
-    font-size: 18px;
-    padding: 18px;
-    box-shadow: 0 0 10px rgba(229, 57, 53, 0.4);
-  }
+  background-color: #e53935;
+  font-size: 18px;
+  padding: 18px;
+  box-shadow: 0 0 8px rgba(229, 57, 53, 0.25); /* always glowing */
+}
 
-  .primary-button:hover {
-    background-color: #c62828;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(229, 57, 53, 0.6);
-  }
+.primary-button:hover,
+.primary-button:focus {
+  background-color: #c62828;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(229, 57, 53, 0.6); /* stronger glow on hover/tap */
+}
+
 </style>
 
 </head>
