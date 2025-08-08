@@ -33,19 +33,12 @@
     h1 { margin: 5px 0; }
     p { font-size: 16px; margin-bottom: 30px; }
     img { max-width: 100%; height: auto; margin-bottom: 20px; }
-
     .branding img.headshot {
       width: 250px;
       border-radius: 12px;
       margin-bottom: 4px;
     }
-    .branding {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
+    .branding { display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; }
     a.button {
       display: block;
       margin: 10px 0;
@@ -60,7 +53,6 @@
       font-size: 16px;
     }
     a.button:hover { background-color: #1565c0; transform: scale(1.03); }
-
     .primary-button {
       background-color: #e53935;
       font-size: 18px;
@@ -88,7 +80,7 @@
       If you know someone ready to make a move, I’d be honored to help them through James Baker Realty.
     </p>
 
-    <!-- Backed by Experience -->
+    <!-- Backed by Experience Section -->
     <section style="background-color:#f9f9f9; padding: 20px; border-radius: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-top: 20px;">
       <div style="display: flex; align-items: center; gap: 16px; justify-content: center; margin-bottom: 16px;">
         <img src="assets/james_baker_logo.png" alt="James Baker Realty Logo" style="height: 64px; width: auto;">
@@ -110,16 +102,17 @@
       </p>
     </section>
 
-    <!-- RESTORED: Client Referral button -->
+    <!-- Client Referral Button -->
     <a class="button primary-button" 
        href="https://forms.gle/npsvRA9yzureSckLA" 
        target="_blank" 
        style="font-size:20px; padding:20px; font-weight:700; margin-top: 10px;">
-      🤝 Refer a Client to James Baker Realty
+      🤝 Client Referral – James Baker Realty
     </a>
 
     <hr style="width: 80%; margin: 20px auto; border: 0; height: 1px; background: #e0e0e0;">
 
+    <!-- Buttons Section -->
     <a class="button primary-button" href="https://forms.gle/86gDKwuogdH8Q5KL9" target="_blank">📩 Client Inquiry Form – Let's Get Started</a>
     <a class="button" href="https://calendly.com/jorge-jgfrealtor/intro-call-with-jorge-garcia-fierro" target="_blank">🗓️ Book an Intro Call</a>
     <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdQNi0owGeOjjfYY4nFZkGqGOU8C2OjW-HHUWyJklxkXYaK2w/viewform?usp=preview" target="_blank">🏠 Get a Free Home Valuation</a>
@@ -132,11 +125,22 @@
     <a class="button" href="https://www.showingnew.com/newhomesbyjorge" target="_blank">🏗️ Browse New Construction Homes</a>
     <a class="button" href="https://www.workforce-resource.com/dpr/pmt/CRMLS/JORGE_GARCIA_FIERRO" target="_blank">📌 Need Help with a Down Payment?</a>
 
-    <!-- Footer Image (Clickable & Mobile-Centered, Larger) -->
-    <a href="https://forms.gle/86gDKwuogdH8Q5KL9" target="_blank" style="display: flex; justify-content: center;">
-      <img src="assets/jbr_form_header_bilingual_smaller.png" 
-           alt="James Baker Realty - Jorge Garcia-Fierro" 
-           style="max-width: 600px; width: 100%; height: auto; display: block; margin: 30px auto 0;">
+    <!-- Footer Image (Clickable with Hover Glow) -->
+<a href="https://forms.gle/npsvRA9yzureSckLA" target="_blank" rel="noopener" style="display:flex; justify-content:center;">
+  <img src="assets/jbr_form_header_bilingual_smaller.png" 
+       alt="James Baker Realty - Jorge Garcia-Fierro" 
+       style="max-width: 600px; width: 100%; height: auto; display: block; margin: 30px auto 0; 
+              border: 2px solid #e53935; border-radius: 10px; 
+              box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+</a>
+
+<style>
+  a[href*="forms.gle"]:hover img {
+    box-shadow: 0 0 20px rgba(229, 57, 53, 0.6);
+    transform: scale(1.02);
+  }
+</style>
+
     </a>
   </div>
 
@@ -153,6 +157,7 @@
   </script>
 </body>
 </html>
+
 
  
   
