@@ -125,7 +125,7 @@
     <a class="button" href="https://www.showingnew.com/newhomesbyjorge" target="_blank">🏗️ Browse New Construction Homes</a>
     <a class="button" href="https://www.workforce-resource.com/dpr/pmt/CRMLS/JORGE_GARCIA_FIERRO" target="_blank">📌 Need Help with a Down Payment?</a>
 
-    <!-- Footer Image (Clickable with Hover Glow) -->
+   <!-- Footer Image (Clickable with Hover Glow and Mobile Resize) -->
 <a href="https://forms.gle/npsvRA9yzureSckLA" target="_blank" rel="noopener" style="display:flex; justify-content:center;">
   <img src="assets/jbr_form_header_bilingual_smaller.png" 
        alt="James Baker Realty - Jorge Garcia-Fierro" 
@@ -135,11 +135,20 @@
 </a>
 
 <style>
+  /* Hover glow effect */
   a[href*="forms.gle"]:hover img {
     box-shadow: 0 0 20px rgba(229, 57, 53, 0.6);
     transform: scale(1.02);
   }
+
+  /* Make footer image slightly larger on mobile */
+  @media (max-width: 600px) {
+    a[href*="forms.gle"] img {
+      max-width: 90%;
+    }
+  }
 </style>
+
 
     </a>
   </div>
