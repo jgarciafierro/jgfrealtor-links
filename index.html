@@ -90,6 +90,16 @@
 
     /* Agent license */
     .agent-lic { font-size:14px; color:#666; margin:4px 0 6px; }
+
+    /* EHO auto-switch (light/dark) */
+    .eho { vertical-align: middle; width: auto; }
+    .eho-24 { height: 24px; }
+    .eho-20 { height: 20px; }
+    .eho--dark { display: none; }
+    @media (prefers-color-scheme: dark) {
+      .eho--light { display: none; }
+      .eho--dark  { display: inline; }
+    }
   </style>
 </head>
 <body>
@@ -231,14 +241,12 @@
         </article>
       </div>
 
-      <!-- Fine print with Equal Housing icon + broker DRE -->
-      <p style="margin-top:14px; font-size:12px; color:#6b6b6f; display:flex; align-items:center; gap:6px;">
-        <svg aria-label="Equal Housing Opportunity" role="img" viewBox="0 0 64 64" width="16" height="16">
-          <path d="M32 8L6 28v28h16V40h20v16h16V28L32 8z" fill="currentColor"/>
-          <rect x="22" y="30" width="20" height="4" fill="currentColor"/>
-          <rect x="22" y="36" width="20" height="4" fill="currentColor"/>
-        </svg>
-        Broker: James Baker Realty, Inc. • CA DRE Lic. #01295685. Photos courtesy of the listing brokerage. Information deemed reliable but not guaranteed.
+      <!-- Fine print with Equal Housing (auto-switch) + broker DRE -->
+      <p style="margin-top:14px; font-size:12px; color:#000; display:flex; align-items:center; gap:8px;">
+        <img class="eho eho--light eho-24" src="assets/eho-black-transparent-256.png" alt="Equal Housing Opportunity">
+        <img class="eho eho--dark  eho-24" src="assets/eho-white-transparent-256.png" alt="Equal Housing Opportunity">
+        <span>Equal Housing Opportunity</span> • Broker: James Baker Realty, Inc. • CA DRE Lic. #01295685.
+        Photos courtesy of the listing brokerage. Information deemed reliable but not guaranteed.
       </p>
     </section>
 
@@ -258,6 +266,13 @@
 
     <p style="margin-top:6px; font-size:12px; color:#6b6b6f;">
       Quick contact: <a href="mailto:jorge@jgfrealtor.com">jorge@jgfrealtor.com</a> • <a href="tel:+16614253815">(661) 425-3815</a>
+    </p>
+
+    <!-- Bottom EHO badge (auto-switch) -->
+    <p style="margin:8px 0 0; font-size:12px; color:#000; display:flex; align-items:center; justify-content:center; gap:8px;">
+      <img class="eho eho--light eho-20" src="assets/eho-black-transparent-256.png" alt="Equal Housing Opportunity">
+      <img class="eho eho--dark  eho-20" src="assets/eho-white-transparent-256.png" alt="Equal Housing Opportunity">
+      <span>Equal Housing Opportunity</span>
     </p>
 
     <style>
