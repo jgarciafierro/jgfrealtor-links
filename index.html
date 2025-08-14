@@ -65,7 +65,6 @@
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(229, 57, 53, 0.6);
     }
-    /* Sub-label inside CTA button */
     .cta-sub {
       display: block;
       font-size: 0.9em;
@@ -76,6 +75,21 @@
     @media (max-width: 480px) {
       .cta-sub { font-size: 0.85em; }
     }
+
+    /* Featured Listings (JBR) */
+    #featured-jbr { background:#f7f7f9; padding: 20px; border-radius:16px; box-shadow:0 2px 6px rgba(0,0,0,.06); margin-top: 20px; text-align:left; }
+    #featured-jbr h2 { margin:0 0 8px 0; font-size:22px; }
+    #featured-jbr .note { margin-top:10px; font-size:15px; color:#0b63c5; background:#eef6ff; padding:8px 12px; border-radius:8px; border:1px solid #c8defa; }
+    .fl-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:18px; margin-top:16px; }
+    .fl-card { background:#fff; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.06); overflow:hidden; display:flex; flex-direction:column; }
+    .fl-card img { width:100%; height:180px; object-fit:cover; display:block; }
+    .fl-meta { padding:16px; display:flex; flex-direction:column; gap:10px; }
+    .fl-row { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+    .fl-price { background:#eef6ff; color:#0b63c5; padding:6px 10px; border-radius:999px; font-weight:700; font-size:14px; }
+    .fl-cta { display:flex; gap:10px; margin-top:4px; }
+
+    /* Agent license */
+    .agent-lic { font-size:14px; color:#666; margin:4px 0 6px; }
   </style>
 </head>
 <body>
@@ -85,6 +99,11 @@
     </div>
 
     <h1>Jorge Garcia-Fierro</h1>
+    <div class="agent-lic">CA DRE Lic. #02153868</div>
+    <p style="margin-top:6px; font-size:12px; color:#6b6b6f;">
+      Quick contact: <a href="mailto:jorge@jgfrealtor.com">jorge@jgfrealtor.com</a> • <a href="tel:+16614253815">(661) 425-3815</a>
+    </p>
+
     <p>
       Bilingual Realtor® serving Palmdale & Antelope Valley — helping families buy, sell, and invest with confidence. 
       Your referrals mean the world to me. <span style="font-style:italic;">/ Sus referencias son muy importantes para mí.</span> 
@@ -137,9 +156,96 @@
       <span class="cta-sub">Instant estimate + monthly reports</span>
     </a>
 
-    <a class="button" id="onehome-link" href="#" target="_blank">🏠 View Today’s Featured Listings</a>
-    <a class="button" href="https://www.showingnew.com/newhomesbyjorge" target="_blank">🏗️ Browse New Construction Homes</a>
-    <a class="button" href="https://www.workforce-resource.com/dpr/pmt/CRMLS/JORGE_GARCIA_FIERRO" target="_blank">📌 Need Help with a Down Payment?</a>
+    <!-- NEW: JBR Active Listings Button (links to master Flexmls page) -->
+    <a class="button primary-button" href="https://www.flexmls.com/share/CdOnU/Selected" target="_blank" style="margin-top: 10px;">
+      🏠 James Baker Realty – Current Active Listings
+    </a>
+
+    <!-- NEW: Featured Listings — James Baker Realty -->
+    <section id="featured-jbr">
+      <h2>Featured Listings — James Baker Realty, Inc.</h2>
+      <div class="note">💡 Click any card below to view all three active James Baker Realty listings in one page.</div>
+
+      <div class="fl-grid">
+        <!-- Card: 36849 James Place -->
+        <article class="fl-card">
+          <a href="https://www.flexmls.com/share/CdOnU/Selected" target="_blank" rel="noopener" aria-label="View all listings including 36849 James Place">
+            <img src="assets/jbr-36849-james-pl-1200.jpg" alt="36849 James Place, Palmdale" loading="lazy" decoding="async">
+          </a>
+          <div class="fl-meta">
+            <div class="fl-row">
+              <h3 style="margin:0; font-size:18px; line-height:1.2;">36849 James Place, Palmdale, CA 93550</h3>
+              <span class="fl-price">$475,000</span>
+            </div>
+            <div style="font-size:14px; color:#555;">
+              <strong>List #:</strong> 25002330 • <strong>Status:</strong> Active<br>
+              <strong>Cross St.:</strong> Noll Drive • <strong>County:</strong> Los Angeles
+            </div>
+            <div class="fl-cta">
+              <a class="button" href="https://www.flexmls.com/share/CdOnU/Selected" target="_blank" rel="noopener" style="flex:1;">View Listing</a>
+              <a class="button" href="mailto:jorge@jgfrealtor.com?subject=Showing%20Request:%2036849%20James%20Place">Request Tour</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card: 41445 Terrazzo Drive -->
+        <article class="fl-card">
+          <a href="https://www.flexmls.com/share/CdOnU/Selected" target="_blank" rel="noopener" aria-label="View all listings including 41445 Terrazzo Drive">
+            <img src="assets/jbr-41445-terrazzo-1200.jpg" alt="41445 Terrazzo Drive, Palmdale" loading="lazy" decoding="async">
+          </a>
+          <div class="fl-meta">
+            <div class="fl-row">
+              <h3 style="margin:0; font-size:18px; line-height:1.2;">41445 Terrazzo Drive, Palmdale, CA 93551</h3>
+              <span class="fl-price">$648,000</span>
+            </div>
+            <div style="font-size:14px; color:#555;">
+              <strong>List #:</strong> 25006304 • <strong>Status:</strong> Active<br>
+              <strong>Cross St.:</strong> 70th West / Ave M-8 • <strong>County:</strong> Los Angeles
+            </div>
+            <div class="fl-cta">
+              <a class="button" href="https://www.flexmls.com/share/CdOnU/Selected" target="_blank" rel="noopener" style="flex:1;">View Listing</a>
+              <a class="button" href="mailto:jorge@jgfrealtor.com?subject=Showing%20Request:%2041445%20Terrazzo">Request Tour</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card: 1311 E Ave Q-11 -->
+        <article class="fl-card">
+          <a href="https://www.flexmls.com/share/CdOnU/Selected" target="_blank" rel="noopener" aria-label="View all listings including 1311 E Ave Q-11">
+            <img src="assets/jbr-1311-q11-1200.jpg" alt="1311 E Ave Q-11, Palmdale" loading="lazy" decoding="async">
+          </a>
+          <div class="fl-meta">
+            <div class="fl-row">
+              <h3 style="margin:0; font-size:18px; line-height:1.2;">1311 E Ave Q-11, Palmdale, CA 93550</h3>
+              <span class="fl-price">$449,900</span>
+            </div>
+            <div style="font-size:14px; color:#555;">
+              <strong>List #:</strong> 25003060 • <strong>Status:</strong> Active<br>
+              <strong>Cross St.:</strong> 15th East • <strong>County:</strong> Los Angeles
+            </div>
+            <div class="fl-cta">
+              <a class="button" href="https://www.flexmls.com/share/CdOnU/Selected" target="_blank" rel="noopener" style="flex:1;">View Listing</a>
+              <a class="button" href="mailto:jorge@jgfrealtor.com?subject=Showing%20Request:%201311%20E%20Ave%20Q-11">Request Tour</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Fine print with Equal Housing icon + broker DRE -->
+      <p style="margin-top:14px; font-size:12px; color:#6b6b6f; display:flex; align-items:center; gap:6px;">
+        <svg aria-label="Equal Housing Opportunity" role="img" viewBox="0 0 64 64" width="16" height="16">
+          <path d="M32 8L6 28v28h16V40h20v16h16V28L32 8z" fill="currentColor"/>
+          <rect x="22" y="30" width="20" height="4" fill="currentColor"/>
+          <rect x="22" y="36" width="20" height="4" fill="currentColor"/>
+        </svg>
+        Broker: James Baker Realty, Inc. • CA DRE Lic. #01295685. Photos courtesy of the listing brokerage. Information deemed reliable but not guaranteed.
+      </p>
+    </section>
+
+    <!-- RENAMED + MOVED: Today’s Featured Picks (from Google Sheet) -->
+    <a class="button" id="onehome-link" href="#" target="_blank" style="margin-top: 14px;">
+      ✨ Today’s Featured Picks <span class="cta-sub">Curated; may include non-JBR listings</span>
+    </a>
 
     <!-- Footer Image -->
     <a href="https://forms.gle/npsvRA9yzureSckLA" target="_blank" rel="noopener" style="display:flex; justify-content:center;">
@@ -149,6 +255,10 @@
                   border: 2px solid #e53935; border-radius: 10px; 
                   box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
     </a>
+
+    <p style="margin-top:6px; font-size:12px; color:#6b6b6f;">
+      Quick contact: <a href="mailto:jorge@jgfrealtor.com">jorge@jgfrealtor.com</a> • <a href="tel:+16614253815">(661) 425-3815</a>
+    </p>
 
     <style>
       a[href*="forms.gle"]:hover img {
@@ -161,19 +271,34 @@
     </style>
   </div>
 
+  <!-- Auto-hide script for “Today’s Featured Picks” -->
   <script>
-    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTfIE2gpxz1vWgf9um2ADFnXiQBiy3BJa0BAvbi1H-FPGDJT2_r_C53tVZg8Rvr054fVrRJNAZwY-3q/pub?output=csv')
-      .then(response => response.text())
-      .then(data => {
-        const rows = data.split('\n');
-        const columns = rows[1].split(',');
-        const latestLink = columns[1]?.replace(/"/g, '').trim();
-        const btn = document.getElementById('onehome-link');
-        if (btn && latestLink) btn.href = latestLink;
-      });
+    (async () => {
+      const btn = document.getElementById('onehome-link');
+      if (!btn) return;
+
+      try {
+        const res = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTfIE2gpxz1vWgf9um2ADFnXiQBiy3BJa0BAvbi1H-FPGDJT2_r_C53tVZg8Rvr054fVrRJNAZwY-3q/pub?output=csv', { cache: 'no-store' });
+        if (!res.ok) throw new Error('fetch failed');
+        const text = await res.text();
+        const rows = text.trim().split('\n');
+        if (rows.length < 2) throw new Error('no rows');
+        const cols = rows[1].split(',');
+        const latestLink = (cols[1] || '').replace(/"/g, '').trim();
+        if (latestLink) {
+          btn.href = latestLink;
+          btn.style.display = 'block';
+        } else {
+          btn.style.display = 'none';
+        }
+      } catch (e) {
+        btn.style.display = 'none';
+      }
+    })();
   </script>
 </body>
 </html>
+
 
 
  
