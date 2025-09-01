@@ -1,92 +1,170 @@
 <!DOCTYPE html>
-</div>
-<div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
-<div class="text-sm font-semibold">2. Download</div>
-<p class="mt-2 text-neutral-700">Grab the <em>California Home Seller Guide</em> with checklists, timelines, and net sheet basics.</p>
-</div>
-<div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
-<div class="text-sm font-semibold">3. Strategize</div>
-<p class="mt-2 text-neutral-700">Pick a Zoom or in‑person appointment to map pricing, prep, and marketing.</p>
-</div>
-<div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
-<div class="text-sm font-semibold">4. List & Launch</div>
-<p class="mt-2 text-neutral-700">We execute: prep, media, syndication, showings, negotiation, escrow, close.</p>
-</div>
-</div>
-</div>
-</section>
+<html lang="en">
+<head>
+  <!-- TODO: Customize before publishing:
+       1) Replace VIDEO_ID in the YouTube iframe with your actual video ID.
+       2) Point the primary CTA to your real seller-guide form URL (currently /seller-guide...).
+       3) Point the Book button to your real calendar link (currently /book...).
+       4) Update Broker and Agent DRE #s (set to TBD below).
+       5) Swap /assets/jbr-logo.png with your actual logo path and update office phone.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free California Home Seller Guide + Strategy Session | James Baker Realty</title>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Get James Baker's proven seller playbook and book a strategy session. Appointments available statewide via Zoom or in-person." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .brand-gradient { background: linear-gradient(90deg,#111827, #b91c1c); }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- Top bar -->
+  <header class="w-full border-b border-neutral-200 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="/James-baker.png" alt="James Baker Realty" class="h-8 w-auto" onerror="this.style.display='none'">
+        <span class="font-bold tracking-tight">James Baker Realty</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#how" class="hover:underline">How it works</a>
+        <a href="#reviews" class="hover:underline">Reviews</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+      </nav>
+      <a href="#cta" class="inline-flex items-center rounded-xl px-4 py-2 text-white bg-red-600 hover:bg-red-700 shadow-sm">Get the Free Guide</a>
+    </div>
+  </header>
 
+  <!-- Hero -->
+  <section class="relative">
+    <div class="brand-gradient absolute inset-0 opacity-10"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Sell Smarter in California
+          <span class="block text-neutral-600 text-3xl md:text-4xl mt-2">Free Home Seller Guide + Strategy Session</span>
+        </h1>
+        <p class="mt-5 text-lg text-neutral-700">Leverage <strong>James Baker’s</strong> proven process and track record. Watch the short video, download the guide, and grab a listing strategy slot with our team. Appointments available statewide via Zoom or in person.</p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-4" id="cta">
+          <a href="/seller-guide?utm_source=youtube&utm_medium=lp&utm_campaign=seller_guide" class="inline-flex items-center justify-center rounded-xl px-5 py-3 bg-red-600 text-white font-semibold hover:bg-red-700 shadow">Get the Free Seller Guide</a>
+          <a href="/book?utm_source=lp&utm_medium=button" class="inline-flex items-center justify-center rounded-xl px-5 py-3 bg-neutral-900 text-white font-semibold hover:bg-neutral-800 shadow">Book a Strategy Session</a>
+        </div>
+        <p class="mt-3 text-sm text-neutral-600">No obligation. We’ll never sell your data. CA sellers only.</p>
+      </div>
+      <div>
+        <!-- Video placeholder -->
+        <div class="aspect-video rounded-2xl overflow-hidden ring-1 ring-neutral-200 shadow-sm bg-black">
+          <!-- Replace src with your YouTube embed -->
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID?rel=0" title="Why Smart CA Sellers Hire Proven Representation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="text-xs text-neutral-500 mt-2">Prefer reading? Download the PDF guide above.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Reviews / Social proof -->
-<section id="reviews" class="py-14 bg-neutral-50 border-y border-neutral-200">
-<div class="max-w-6xl mx-auto px-4">
-<h2 class="text-2xl md:text-3xl font-bold">Why sellers choose James Baker Realty</h2>
-<div class="mt-8 grid md:grid-cols-3 gap-6">
-<figure class="p-6 rounded-2xl border border-neutral-200 bg-white shadow-sm">
-<blockquote class="text-neutral-800">“Professional, strategic, and communicative. We sold over asking with a smooth escrow.”</blockquote>
-<figcaption class="mt-4 text-sm text-neutral-600">— Verified Google Review</figcaption>
-</figure>
-<figure class="p-6 rounded-2xl border border-neutral-200 bg-white shadow-sm">
-<blockquote class="text-neutral-800">“James’s pricing and prep plan worked perfectly. Highly recommend.”</blockquote>
-<figcaption class="mt-4 text-sm text-neutral-600">— Past CA Seller</figcaption>
-</figure>
-<figure class="p-6 rounded-2xl border border-neutral-200 bg-white shadow-sm">
-<blockquote class="text-neutral-800">“Expert guidance from list to close. Zero surprises.”</blockquote>
-<figcaption class="mt-4 text-sm text-neutral-600">— Repeat Client</figcaption>
-</figure>
-</div>
-</div>
-</section>
+  <!-- How it works -->
+  <section id="how" class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">How it works</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <div class="text-sm font-semibold">1. Watch</div>
+          <p class="mt-2 text-neutral-700">Get James’s 5-minute overview of the current CA market and our listing process.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <div class="text-sm font-semibold">2. Download</div>
+          <p class="mt-2 text-neutral-700">Grab the <em>California Home Seller Guide</em> with checklists, timelines, and net sheet basics.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <div class="text-sm font-semibold">3. Strategize</div>
+          <p class="mt-2 text-neutral-700">Pick a Zoom or in-person appointment to map pricing, prep, and marketing.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <div class="text-sm font-semibold">4. List & Launch</div>
+          <p class="mt-2 text-neutral-700">We execute: prep, media, syndication, showings, negotiation, escrow, close.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Reviews / Social proof -->
+  <section id="reviews" class="py-14 bg-neutral-50 border-y border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Why sellers choose James Baker Realty</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <figure class="p-6 rounded-2xl border border-neutral-200 bg-white shadow-sm">
+          <blockquote class="text-neutral-800">“Professional, strategic, and communicative. We sold over asking with a smooth escrow.”</blockquote>
+          <figcaption class="mt-4 text-sm text-neutral-600">— Verified Google Review</figcaption>
+        </figure>
+        <figure class="p-6 rounded-2xl border border-neutral-200 bg-white shadow-sm">
+          <blockquote class="text-neutral-800">“James’s pricing and prep plan worked perfectly. Highly recommend.”</blockquote>
+          <figcaption class="mt-4 text-sm text-neutral-600">— Past CA Seller</figcaption>
+        </figure>
+        <figure class="p-6 rounded-2xl border border-neutral-200 bg-white shadow-sm">
+          <blockquote class="text-neutral-800">“Expert guidance from list to close. Zero surprises.”</blockquote>
+          <figcaption class="mt-4 text-sm text-neutral-600">— Repeat Client</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-<!-- FAQs -->
-<section id="faq" class="py-14 bg-white">
-<div class="max-w-6xl mx-auto px-4">
-<h2 class="text-2xl md:text-3xl font-bold">Seller FAQ</h2>
-<div class="mt-8 grid md:grid-cols-2 gap-6">
-<div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
-<h3 class="font-semibold">What’s in the free guide?</h3>
-<p class="mt-2 text-neutral-700">A step‑by‑step prep checklist, timeline, net sheet basics, disclosures overview, and our marketing plan.</p>
-</div>
-<div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
-<h3 class="font-semibold">Is there any obligation?</h3>
-<p class="mt-2 text-neutral-700">No. The guide and consult are complimentary for CA homeowners.</p>
-</div>
-<div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
-<h3 class="font-semibold">Do you work statewide?</h3>
-<p class="mt-2 text-neutral-700">Yes—Zoom consults statewide; in‑person available in select regions. If we’re not the best fit, we’ll refer you.</p>
-</div>
-<div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
-<h3 class="font-semibold">How do appointments work?</h3>
-<p class="mt-2 text-neutral-700">Choose an open slot that fits your schedule. You’ll get a confirmation and reminders by email/text.</p>
-</div>
-</div>
-</div>
-</section>
+  <!-- FAQs -->
+  <section id="faq" class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Seller FAQ</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <h3 class="font-semibold">What’s in the free guide?</h3>
+          <p class="mt-2 text-neutral-700">A step-by-step prep checklist, timeline, net sheet basics, disclosures overview, and our marketing plan.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <h3 class="font-semibold">Is there any obligation?</h3>
+          <p class="mt-2 text-neutral-700">No. The guide and consult are complimentary for CA homeowners.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <h3 class="font-semibold">Do you work statewide?</h3>
+          <p class="mt-2 text-neutral-700">Yes—Zoom consults statewide; in-person available in select regions. If we’re not the best fit, we’ll refer you.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200 bg-neutral-50">
+          <h3 class="font-semibold">How do appointments work?</h3>
+          <p class="mt-2 text-neutral-700">Choose an open slot that fits your schedule. You’ll get a confirmation and reminders by email/text.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-<!-- Footer / Compliance -->
-<footer class="py-10 bg-neutral-900 text-neutral-200">
-<div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-<div>
-<div class="font-semibold">James Baker Realty, Inc.</div>
-<div class="text-sm mt-1">Broker: James Baker • DRE #<span class="font-mono">TBD</span></div>
-<div class="text-sm">Office: <span class="font-mono">(XXX) XXX‑XXXX</span></div>
-<div class="text-sm mt-1">Equal Housing Opportunity</div>
-</div>
-<div>
-<div class="font-semibold">Your Representative</div>
-<div class="text-sm mt-1">Jorge Garcia‑Fierro • DRE #<span class="font-mono">TBD</span></div>
-<div class="text-sm">Email: <a href="mailto:jorge@jgfrealtor.com" class="underline">jorge@jgfrealtor.com</a></div>
-<div class="text-sm">Site: <a href="https://www.jgfrealtor.com" class="underline">jgfrealtor.com</a></div>
-</div>
-<div class="text-sm">
-<div>© <span id="year">2025</span> James Baker Realty, Inc. All rights reserved.</div>
-<div class="mt-2">Not intended to solicit properties already listed or clients under contract. Information deemed reliable but not guaranteed. This is not legal or tax advice; consult your advisor.</div>
-<div class="mt-2">By requesting the guide, you agree to be contacted about your real estate needs. We respect your privacy.</div>
-</div>
-</div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</footer>
+  <!-- Footer / Compliance -->
+  <footer class="py-10 bg-neutral-900 text-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="font-semibold">James Baker Realty, Inc.</div>
+        <div class="text-sm mt-1">Broker: James Baker • DRE #<span class="font-mono">TBD</span></div>
+        <div class="text-sm">Office: <span class="font-mono">(XXX) XXX-XXXX</span></div>
+        <div class="text-sm mt-1">Equal Housing Opportunity</div>
+      </div>
+      <div>
+        <div class="font-semibold">Your Representative</div>
+        <div class="text-sm mt-1">Jorge Garcia-Fierro • DRE #<span class="font-mono">TBD</span></div>
+        <div class="text-sm">Email: <a href="mailto:jorge@jgfrealtor.com" class="underline">jorge@jgfrealtor.com</a></div>
+        <div class="text-sm">Site: <a href="https://www.jgfrealtor.com" class="underline">jgfrealtor.com</a></div>
+      </div>
+      <div class="text-sm">
+        <div>© <span id="year">2025</span> James Baker Realty, Inc. All rights reserved.</div>
+        <div class="mt-2">Not intended to solicit properties already listed or clients under contract. Information deemed reliable but not guaranteed. This is not legal or tax advice; consult your advisor.</div>
+        <div class="mt-2">By requesting the guide, you agree to be contacted about your real estate needs. We respect your privacy.</div>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
+
+
+
+
+
+
+
